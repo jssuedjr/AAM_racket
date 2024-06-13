@@ -37,7 +37,7 @@
     ;; Third case of Figure 3
     [`(,v ,ρ ,σ ,a)
      (match (hash-ref σ a) 
-       ;; if κ = ar(e,ρ′,c)
+       ;; if κ = ar(e,ρ′,c) 
        [`(ar ,e ,ρ+ ,c)
         (define b (gen-new-addr))
         `(,e
@@ -69,7 +69,7 @@
 ;; IDENTITY FUNCTION (LAMBDA (X) X) AND OMEGA TERM
 ;; (evaluate-all-steps '(lambda (x) x))
 ;; (evaluate-all-steps 'x) <--- doesn't apply, all inputs are lambdas
-;; (evaluate-all-steps '((lambda (x) x) (lambda (y) y)))
+(evaluate-all-steps '((lambda (x) x) (lambda (y) y)))
 ;; (evaluate-all-steps '((lambda (x) (x x)) (lambda (y) y)))    
 ;; (evaluate-all-steps '((lambda (x) (x x)) (lambda (x) (x x)))
 ;; (evaluate-all-steps '((lambda (x) x) ((lambda (y) y) (lambda (y) y))))

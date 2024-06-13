@@ -109,6 +109,9 @@
     (h (eval ς)))
   (h `(,e ,(hash) ,(hash-set new-σ a0 'mt) ,a0 ,t0)))
 
+
+;; v is a syntactic lambda
+
 ;; IDENTITY FUNCTION (LAMBDA (X) X) AND OMEGA TERM
 ;; (evaluate-all-steps '((lambda (x) x) (lambda (y) y)))
 ;; (evaluate-all-steps '((lambda (x) (x x)) (lambda (y) y)))    
